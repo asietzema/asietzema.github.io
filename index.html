@@ -1,6 +1,17 @@
-<html>
-<header><title>This is title</title></header>
-<body>
-Hello world
+<script src=”https://aframe.io/releases/0.6.1/aframe.min.js”></script>
+<script src=”https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js”></script>
+
+<body style=’margin : 0px; overflow: hidden;’>
+  <a-scene embedded arjs=’sourceType: webcam;’>
+      <a-marker preset=’hiro’>
+        <!-- Adding an OBJ file to an AR Project-->
+        <a-entity 
+            obj-model=”obj: url(https://github.com/asietzema/asietzema.github.io/blob/master/Export_76000_Amstelveenboog_F_KW-55_S.obj); 
+            mtl: url(https://github.com/asietzema/asietzema.github.io/blob/master/Export_76000_Amstelveenboog_F_KW-55_S.mtl)”>
+        </a-entity>
+              
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
 </body>
-</html>
