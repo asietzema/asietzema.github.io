@@ -12,9 +12,8 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
         <a-assets>
-            <a-asset-item id="truck" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/truck/mining-dump-truck.obj"></a-asset-item>
-            <a-asset-item id="truck-mtl" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/truck/mining-dump-truck.mtl""></a-asset-item>
-          </a-assets>
+            <a-asset-item id="truck" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/truck/mining-dump-truck.fbx"></a-asset-item>
+        </a-assets>
 
         <a-marker type='barcode' value='7'>
             <a-box position='0 0.5 0' color="red"></a-box>
@@ -22,7 +21,7 @@
 
         <a-marker type='barcode' value='6'>
             <a-entity
-                obj-model="obj: #truck; mtl: #truck-mtl">
+                fbx-model="#truck">
             </a-entity>
         </a-marker>
 
