@@ -7,21 +7,20 @@
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
         <a-assets>
-               <a-asset-item id="truck" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/truck/mining-dump-truck.gltf"></a-asset-item>
-               <a-asset-item id="opkomst" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/model3.gltf"></a-asset-item>
-            </a-assets>
+            <a-asset-item id="opkomst" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/Opkomst.glb"></a-asset-item>   
+            <a-asset-item id="truck" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/truck/mining-dump-truck.gltf"></a-asset-item>
+        </a-assets>
 
-            <a-marker type='barcode' value='6'>
+        <a-marker type='barcode' value='6'>
             <a-entity
-                gltf-model="#truck" scale="0.005 0.005 0.005">
-            </a-entity>
-         </a-marker>
+                gltf-model="#opkomst" scale="0.1 0.1 0.1">
+         </a-marker> -->
 
          <a-marker type='barcode' value='7'>
             <a-entity
-                gltf-model="#opkomst" scale="0.1 0.1 0.1">
-            </a-entity>
+                gltf-model="#truck" scale="0.01 0.01 0.01">
          </a-marker>
+            </a-entity>
 
         <a-entity camera></a-entity>
         </a-scene>
