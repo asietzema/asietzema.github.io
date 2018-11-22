@@ -3,9 +3,13 @@
     <head>
         <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
         <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+        <script src="https://raw.githubusercontent.com/google/draco/master/javascript/example/DRACOLoader.js"></script>
+        <script src="https://github.com/mrdoob/three.js/tree/master/examples/js/libs/draco/gltf/draco_decoder.wasm"></script>
+        <script src="https://github.com/mrdoob/three.js/tree/master/examples/js/libs/draco/gltf/draco_encoder.js"></script>
+        <script src="https://github.com/mrdoob/three.js/tree/master/examples/js/libs/draco/gltf/draco_wasm_wrapper.js"></script>
     </head>    
     <body style='margin : 0px; overflow: hidden;'>
-       <a-scene embedded arjs ='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' gltf-model= 'dracoDecoderPath: https://github.com/mrdoob/three.js/tree/master/examples/js/libs/draco/gltf/;'>
+       <a-scene embedded arjs ='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' gltf-model = 'dracoDecoderPath: https://github.com/mrdoob/three.js/tree/master/examples/js/libs/draco/gltf/;'>
 
         <a-assets>
             <a-asset-item id="opkomst" src="https://raw.githubusercontent.com/asietzema/asietzema.github.io/master/data/Opkomst.glb"></a-asset-item>   
@@ -15,7 +19,7 @@
 
         <a-marker type='barcode' value='6'>
             <a-entity
-                gltf-model="#opkomst" scale="0.5 0.5 0.5">
+                gltf-model="#opkomst" scale="0.25 0.25 0.25">
          </a-marker> 
 
          <a-marker type='barcode' value='7'>
